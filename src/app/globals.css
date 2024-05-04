@@ -1,33 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  
+html {
+  @apply overflow-hidden h-full
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@apply bg-fixed bg-gradient-to-bl from-bgBlue to-black overflow-auto w-full h-full
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h1, h2, h3, h4, h5, h6, p, span {
+  @apply text-white
+}
+
+.contactStyles {
+  @apply fixed inset-0 w-fit h-fit m-auto flex flex-col items-center gap-16
+}
+
+.contactStyles p {
+  @apply text-2xl lg:text-6xl font-thin
+}
+
+.contactIcons {
+  @apply w-[30px] h-[25px] lg:w-[60px] lg:h-[60px]
 }
