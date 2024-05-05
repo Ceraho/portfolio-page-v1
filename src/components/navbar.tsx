@@ -31,7 +31,7 @@ const navButtons = [
 ];
 
 const Navbar = () => {
-  const [isMobileMenuActive, setMenuActive] = useState(true);
+  const [isMobileMenuActive, setMenuActive] = useState(false);
 
   function activateMenu() {
     setMenuActive(!isMobileMenuActive);
