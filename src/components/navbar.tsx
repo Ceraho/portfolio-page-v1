@@ -78,7 +78,7 @@ const Navbar = () => {
   function NavMenuHandler() {
     if (isMobileMenuActive) {
       return (
-        <div className="w-screen h-screen flex flex-col gap-8 justify-center pb-20 items-center text-2xl">
+        <div onClick={activateMenu} className="w-screen h-screen flex flex-col gap-8 justify-center pb-20 items-center text-2xl">
           {MobileNavItems}
         </div>
       );

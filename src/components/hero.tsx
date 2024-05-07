@@ -1,36 +1,44 @@
 import { Button } from "./ui/button";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import { landingPageParagraphsContent } from "@/app/data";
 
 const Hero = () => {
+  const CtaGroup = () => (
+    <>
+      <Button asChild variant="hireMe" size="hireMeSize">
+        <Link href="/contact">Get In Touch</Link>
+      </Button>
+      <Button asChild variant="hireMeLink" size={"hireMeSize"}>
+        <a href="/erim_cerrahoglu_cv.pdf" target="_blank">
+          Resume <ArrowUpRight />
+        </a>
+      </Button>
+    </>
+  );
+
+  const paragraphContent = landingPageParagraphsContent.map((item, index) => (
+    <div key={index}>
+      <p className="font-light text-lg lg:text-base leading-loose lg:leading-9 text-slate-400">{item}</p>
+      <br />
+    </div>
+  ));
+
   return (
-    <div className="flex flex-1 justify-center">
-      <div className="flex flex-col w-5/6 lg:w-2/5 items-center gap-10 2xl:gap-16 mt-8">
-        <img
-          src="/MyPic.png"
-          alt="My Picture"
-          className="rounded-full outline outline-offset-4 outline-4 outline-blue-500 w-[100px] lg:w-[130px] mt-10 lg:mt-0"
-        ></img>
-        <div className="text-center">
-          <h2 className="font-thin text-5xl lg:text-7xl">Hi, I'm</h2>
-          <h2 className="text-5xl lg:text-7xl text-wrap">Erim Cerrahoglu</h2>
+    <div className="m-8 mt-20 flex flex-col gap-12 lg:gap-18 lg:flex-row lg:mx-24">
+      <div className="flex flex-col gap-6 lg:gap-10">
+        <div>
+          <p className="font-thin text-4xl lg:text-5xl">Hi, I'm</p>
+          <p className="font-bold text-4xl lg:text-5xl">Erim Cerrahoglu</p>
         </div>
-        <p className="font-light lg:text-lg leading-loose">
-          A computer engineer with solid foundation and three years of hands-on
-          experience in quality assurance and software development. I bring a
-          unique blend of technical expertise and attention to detail to every
-          project.
-        </p>
-        <div className="flex flex-1 flex-col lg:flex-row gap-12 lg:gap-36 mt-4">
-          <Button asChild variant="hireMe" size="hireMeSize">
-            <Link href="/contact">Get in Touch</Link>
-          </Button>
-          <a href="/erim_cerrahoglu_cv.pdf" target="_blank">
-            <Button variant="hireMeLink" size="hireMeSize" className="ml-3 lg:ml-0">
-              Resume <ArrowUpRight size={20} className="ml-1" />
-            </Button>
-          </a>
+        <p className="font-medium text-xl lg:text-xl">Software Engineer</p>
+        <div className="hidden lg:flex gap-4">
+          <CtaGroup />
         </div>
+      </div>
+      <div>{paragraphContent}</div>
+      <div className="lg:hidden flex flex-col gap-6 items-center">
+        <CtaGroup />
       </div>
     </div>
   );

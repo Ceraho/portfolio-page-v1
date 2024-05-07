@@ -18,7 +18,11 @@ const ContactItem = ({ contentType }: { contentType: string }) => {
       {contentType === "github" && (
         <>
           <Github className="contactIcons" />
-          <a href="https://github.com/Ceraho" className="hover:underline">
+          <a
+            href="https://github.com/Ceraho"
+            className="hover:underline"
+            target="_blank"
+          >
             <p>GitHub</p>
           </a>
         </>
@@ -29,6 +33,7 @@ const ContactItem = ({ contentType }: { contentType: string }) => {
           <a
             href="https://www.linkedin.com/in/erim-cerraho%C4%9Flu-620653207/"
             className="hover:underline"
+            target="_blank"
           >
             <p>LinkedIn</p>
           </a>
