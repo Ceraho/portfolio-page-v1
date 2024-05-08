@@ -1,4 +1,4 @@
-import { Mail, Github, Linkedin, Smartphone } from "lucide-react";
+import { Mail, Github, Linkedin } from "lucide-react";
 import { contactInfo } from "@/app/data";
 
 const ContactItem = ({ contentType }: { contentType: string }) => {

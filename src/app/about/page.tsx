@@ -14,7 +14,7 @@ const AboutPage = () => {
   });
 
   return (
-    <div className="mt-16 w-full items-center lg:mt-2 flex flex-col gap-12">
+    <div className="mt-8 w-full items-center flex flex-col gap-12">
       <div className="flex flex-col justify-center">
         <h2 className="text-2xl font-bold mb-6 ml-3">Work Experience</h2>
         <section className="flex flex-col gap-8">{workExperienceList}</section>

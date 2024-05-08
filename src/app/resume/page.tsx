@@ -6,7 +6,7 @@ const ResumePage = () => {
   return (
     <div className="fixed inset-0 w-fit h-fit m-auto">
       <a href="/erim_cerrahoglu_cv.pdf" target="_blank">
-        <Button variant="hireMe" size="hireMeSize">
+        <Button variant="getInTouchCTA" size="getInTouchCTASize">
           View Full CV
         </Button>
       </a>
