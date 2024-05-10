@@ -8,7 +8,7 @@ const AboutPage = () => {
         <h4 className="text-xl font-thin">
           {item.company}, {item.role}
         </h4>
-        <p>{item.desc}</p>
+        <p className="text-slate-400">{item.desc}</p>
       </div>
     );
   });
@@ -27,7 +27,7 @@ const AboutPage = () => {
             <h4 className="text-xl font-thin">
               {aboutPageContent.educationContent.company}, {aboutPageContent.educationContent.role}
             </h4>
-            <p>{aboutPageContent.educationContent.desc}</p>
+            <p className="text-slate-400">{aboutPageContent.educationContent.desc}</p>
           </div>
         </section>
       </div>

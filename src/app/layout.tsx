@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={robotoFlex.className}>
+      <body className={"flex flex-col gap-14 lg:gap-24 " + robotoFlex.className}>
         <Navbar />
         {children}
       </body>

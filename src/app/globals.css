@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .contactStyles {
-  @apply fixed inset-0 w-fit h-fit m-auto flex flex-col items-center gap-16
+  @apply flex flex-col h-screen justify-center items-center gap-16
 }
 
 .contactStyles p {
