@@ -93,7 +93,7 @@ const Navbar = () => {
           className={
             "flex fixed top-0 w-full bg-black py-1 justify-end lg:fixed lg:justify-center lg:gap-16 lg:m-6 lg:rounded-full lg:drop-shadow-2xl lg:w-fit " +
             (isMobileMenuActive
-              ? "flex-col items-end bg-black/50 backdrop-blur-md"
+              ? "flex-col items-end bg-black/50 backdrop-blur-md animate-fade"
               : "")
           }
         >
