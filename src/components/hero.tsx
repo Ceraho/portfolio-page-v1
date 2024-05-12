@@ -25,7 +25,7 @@ const Hero = () => {
   ));
 
   return (
-    <div className="m-8 lg:mt-24 flex flex-col scroll-mt-32 lg:flex-row lg:w-screen lg:justify-evenly">
+    <div className="m-8 lg:mt-24 flex flex-col lg:flex-row lg:w-screen lg:justify-evenly lg:mx-0">
       <div className="flex flex-col gap-6 lg:gap-10">
         <div>
           <p className="font-thin text-4xl lg:text-6xl">Hi, I'm</p>
