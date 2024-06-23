@@ -10,7 +10,7 @@ const Hero = () => {
         <Link href="/contact">Get In Touch</Link>
       </Button>
       <Button asChild variant="resumeCTA" size="resumeCTASize">
-        <a href="/erim_cerrahoglu_cv.pdf" target="_blank">
+        <a href="https://docs.google.com/document/d/e/2PACX-1vQGJZwtvQTAJAOpIqFkB4-3zHl5pr6WJLIGMmfXyKg38WKGxWpEWmv0Rkpcamd9_D0JSI_lNjhRZ6RE/pub" target="_blank">
           Resume <ArrowUpRight />
         </a>
       </Button>
