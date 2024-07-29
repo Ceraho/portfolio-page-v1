@@ -31,7 +31,7 @@ const ContactItem = ({ contentType }: { contentType: string }) => {
         <>
           <Linkedin className="contactIcons" />
           <a
-            href="https://www.linkedin.com/in/erim-cerraho%C4%9Flu-620653207/"
+            href="https://www.linkedin.com/in/erim-cerrahoglu/"
             className="hover:underline"
             target="_blank"
           >
